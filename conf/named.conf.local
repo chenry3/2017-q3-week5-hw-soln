@@ -1,0 +1,263 @@
+// Begin Master Zones
+
+zone "ulcert.uw.edu" {
+	type slave;
+	file "slaves/db.ulcert.uw.edu";
+	masters { 140.142.159.151; };
+
+	// define ns-auth-1.umn.edu, hanna.cac.washington.edu and marge and holly.s.uw.edu
+	allow-transfer { 140.142.159.0/24;128.101.101.1;140.142.5.5;140.142.5.13; 173.250.227.69; };
+};
+
+zone "ulcert.washington.edu" {
+	type slave;
+	file "slaves/db.ulcert.washington.edu";
+	masters { 140.142.159.151; };
+
+        // define ns-auth-1.umn.edu, hanna.cac.washington.edu and marge and holly.s.uw.edu
+        allow-transfer { 140.142.159.0/24;128.101.101.1;140.142.5.5;140.142.5.13; 173.250.227.69; };
+};
+
+////////////////////////////////
+// Begin student Slave zones
+///////////////////////////////
+
+// Instructor delegated zone
+zone "essex.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/essex.ulcert.txt";
+	masterfile-format text;
+        masters { 140.142.159.126; };
+};
+
+// TA  delegated zone
+zone "mattcloud.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/mattcloud.txt";
+	masterfile-format text;
+        masters { 140.142.159.125; };
+};
+
+// Ariefin zone
+zone "evergreen.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/evergreen.txt";
+	masterfile-format text;
+        masters { 140.142.159.197; };
+};
+
+// Babak zone
+zone "babak.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/babak.txt";
+	masterfile-format text;
+        masters { 140.142.159.198; };
+};
+
+// Barbara zone
+zone "awake.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/awake.txt";
+	masterfile-format text;
+        masters { 140.142.159.199; };
+};
+
+// Billy zone
+zone "locust.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/locust.txt";
+	masterfile-format text;
+        masters { 140.142.159.200; };
+};
+
+// Brian zone
+zone "research.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/research.txt";
+	masterfile-format text;
+        masters { 140.142.159.202; };
+};
+
+// Felix zone
+zone "frzone.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/frzone.txt";
+	masterfile-format text;
+        masters { 140.142.159.203; };
+};
+
+// Cho zone
+zone "lucy.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/lucy.txt";
+	masterfile-format text;
+        masters { 140.142.159.204; };
+};
+
+// James zone
+zone "jim.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/jim.txt";
+	masterfile-format text;
+        masters { 140.142.159.205; };
+};
+
+// Jessica zone
+zone "hk.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/hk.txt";
+	masterfile-format text;
+        masters { 140.142.159.206; };
+};
+
+// John zone
+zone "hello.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/hello.txt";
+	masterfile-format text;
+        masters { 140.142.159.207; };
+};
+
+// John zone
+zone "jfm123.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/jfm123.txt";
+	masterfile-format text;
+        masters { 140.142.159.208; };
+};
+
+// Joseph zone
+zone "mindcraft.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/mindcraft.txt";
+	masterfile-format text;
+        masters { 140.142.159.209; };
+};
+
+// Lawerence zone
+zone "lawrence.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/lawrence.txt";
+	masterfile-format text;
+        masters { 140.142.159.110; };
+};
+
+// Luis zone
+zone "lrmr.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/lrmr.txt";
+	masterfile-format text;
+        masters { 140.142.159.111; };
+};
+
+// Marshall zone
+zone "marshall.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/marshall.txt";
+	masterfile-format text;
+        masters { 140.142.159.127; };
+};
+
+// Michael zone
+zone "emcee.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/emcee.txt";
+	masterfile-format text;
+        masters { 140.142.159.112; };
+};
+
+// Michael zone
+zone "vengef.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/vengef.txt";
+	masterfile-format text;
+        masters { 140.142.159.113; };
+};
+
+// Mitch zone
+zone "feynman.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/feynman.txt";
+	masterfile-format text;
+        masters { 140.142.159.114; };
+};
+
+// Patrick zone
+zone "shark.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/shark.txt";
+	masterfile-format text;
+        masters { 140.142.159.115; };
+};
+
+// Robert zone
+zone "yazoo.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/yazoo.txt";
+	masterfile-format text;
+        masters { 140.142.159.119; };
+};
+
+// Ruben zone
+zone "reruiz.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/reruiz.txt";
+	masterfile-format text;
+        masters { 140.142.159.117; };
+};
+
+// Luke zone
+zone "marneyl.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/marneyl.txt";
+	masterfile-format text;
+        masters { 140.142.159.118; };
+};
+
+// Ryan zone
+zone "rcox.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/rcox.txt";
+	masterfile-format text;
+        masters { 140.142.159.119; };
+};
+
+// Melissa zone
+//zone "fred.ulcert.uw.edu" IN {
+//       type slave;
+//        file "zones/slaves/fred.txt";
+//	masterfile-format text;
+//       masters { 140.142.159.120; };
+//};
+
+// Deborah zone
+zone "coffee.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/coffee.txt";
+	masterfile-format text;
+        masters { 140.142.159.121; };
+};
+
+// Ryan zone
+zone "ryan.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/ryan.txt";
+	masterfile-format text;
+        masters { 140.142.159.122; };
+};
+
+// Sashi zone
+zone "peace.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/peace.txt";
+	masterfile-format text;
+        masters { 140.142.159.123; };
+};
+
+// Thomas zone
+zone "penguins.ulcert.uw.edu" IN {
+        type slave;
+        file "zones/slaves/penguins.txt";
+	masterfile-format text;
+        masters { 140.142.159.120; };
+};
